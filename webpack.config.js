@@ -10,11 +10,12 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    static: path.resolve(__dirname, "dist"),
-    watchFiles: ["src/**/*.html", "src/**/*.njk", "src/**/*.md"],
+    static: path.resolve(__dirname, "dist"), // Serve generated output
+    watchFiles: ["src/**/*.njk", "src/**/*.md", "src/**/*.html"],
     hot: true,
     open: true,
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.md",
