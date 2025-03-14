@@ -1,27 +1,60 @@
-<nav class="roboto">
-  <div class="nav-logo">
-    <a class="site-link">
-      <span class="company-logo"
-        ><img src="/assets/img/logo.png" alt="Company Logo" />
-      </span>
-    </a>
-  </div>
-  <div class="site-link">
-    <ul>
-      <li><a href="" class="nav-link">About Us</a></li>
-      <li><a href="" class="nav-link">FAQ</a></li>
-      <li><a href="" class="nav-link">Our Services</a></li>
-      <li><a href="" class="nav-link">Gallery</a></li>
-      <li><a href="" class="nav-link">Contact</a></li>
-    </ul>
-  </div>
-  <div class="nav-phone-menu-container">
-    <div class="nav-phonenumber">
-      <img />
-      <span class="site-link">123-456-7890</span>
+<nav class="roboto" aria-label="Main Navigation">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a class="site-link">
+        <span class="company-logo"
+          ><img src="/assets/img/logo.png" alt="Company Logo" />
+        </span>
+      </a>
     </div>
-    <button class="site-menu">
-      <img class="menu-btn-svg" src="assets/img/menu.svg" aria-hidden="true" />
-    </button>
+    <div class="site-link">
+      <ul id="navLinks">
+        <li>
+          <a href="" class="nav-link" tabindex="0">About Us</a>
+        </li>
+        <li>
+          <a href="" class="nav-link" tabindex="0">FAQ</a>
+        </li>
+        <li>
+          <a href="" class="nav-link" tabindex="0">Our Services</a>
+        </li>
+        <li>
+          <a href="" class="nav-link" tabindex="0">Gallery</a>
+        </li>
+        <li>
+          <a href="" class="nav-link" tabindex="0">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-phone-menu-container">
+      <div class="nav-phonenumber">
+        <img />
+        <span class="site-link nav-phone" tabindex="0">123-456-7890</span>
+      </div>
+      <button class="site-menu" id="hamburger-menu">
+        <img
+          class="menu-btn-svg"
+          src="assets/img/menu.svg"
+          aria-hidden="true"
+        />
+      </button>
+      <button class="cssbuttons-io-button">
+        Quote Me!
+        <div class="icon">
+          <svg
+            height="24"
+            width="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </button>
+    </div>
   </div>
 </nav>
