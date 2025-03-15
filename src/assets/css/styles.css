@@ -828,3 +828,31 @@ footer {
 small {
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 1rem 2rem;
+  }
+  .footer-top-text {
+    text-align: center;
+  }
+  .footer-bottom-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr 3);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+  .footer-social-container {
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  small {
+    padding-top: 1rem;
+  }
+}
