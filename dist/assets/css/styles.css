@@ -749,7 +749,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
+  padding: 1rem 0rem;
   gap: 1rem;
 }
 .footer-top-text {
@@ -763,7 +763,8 @@ footer {
   text-align: center;
   line-height: 1.7;
 }
-.footer-top-container button {
+.footer-top-container button,
+.services-btn {
   display: inline-block;
   outline: none;
   cursor: pointer;
@@ -783,10 +784,13 @@ footer {
   color: #fff;
   background-color: rgb(252, 198, 19);
   height: 48px;
+  overflow: hidden;
 }
-.footer-top-container button:hover {
+.footer-top-container button:hover,
+.services-btn:hover {
   transform: scale(1.04);
   background-color: rgb(252, 198, 19);
+  overflow: hidden;
 }
 .footer-bottom-container {
   display: flex;
@@ -807,7 +811,7 @@ footer {
   color: #353535;
   width: 100%;
   max-width: 1290px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .footer-social-container {
   display: flex;
@@ -855,4 +859,51 @@ small {
   small {
     padding-top: 1rem;
   }
+}
+/*------------------HERO-----------------------*/
+.hero-container {
+  width: 100vw;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.6) 30%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0) 85%
+    ),
+    url("../img/hero-background.jpg");
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1290px;
+  padding: 1rem 6rem;
+}
+
+.hero-text-container {
+  padding: 5rem 0rem;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+}
+.hero-text-container h1 {
+  color: rgb(252, 198, 19);
+  text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.77);
+  font-weight: 800;
+}
+.hero-text-container p {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.77);
+}
+.services-btn {
+  max-width: 200px;
+  align-self: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
 }

@@ -1,1 +1,2 @@
-Footer
+Configure prettier and vscode for nunjucks files 
+our services hero btn clipped into left
