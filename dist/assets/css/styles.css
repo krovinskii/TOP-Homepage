@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #fef7ed;
 }
 
 /*-------------------NAV-----------------*/
@@ -906,4 +907,45 @@ small {
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
+}
+/* Wave Transition for Hero Section */
+.hero-container {
+  position: relative;
+}
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave {
+  width: 100%;
+  /* Reduce the height to make the wave smaller */
+  height: 80px; /* You can adjust this value to make it even smaller if needed */
+  display: block;
+}
+.wave1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wave2 {
+  position: relative;
+  top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .hero-inner {
+    padding: 0rem 2rem;
+  }
+  .hero-text-container {
+    padding: 1rem 0rem;
+  }
+  .hero-text-container p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+    font-weight: 600;
+  }
 }
